@@ -1,0 +1,18 @@
+from tensorflow.keras.preprocessing.text import tokenizer
+from tensorflow.keras.preprocessing.sequence imporet pad_sequences
+
+npc_description_example = [
+
+
+] 
+
+tokenizer = Tokenizer(num_words = 1000, oov_token ="<OOV>")
+tokenizer.fits_on_texts(sentences)
+word_index = tokenizer.word_index
+
+sequences - tokenizer.text_to_sequence(sentences)
+
+padded = pad_sequence(sequences)
+print(word_index)
+print(sequences)
+print(padded)
